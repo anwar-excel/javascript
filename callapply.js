@@ -32,6 +32,11 @@ const friendlyPerson = {
 // herochargeBill(5000);
 // console.log(heroPerson.salary);
 
-normalPerson.chargeBill.call(heroPerson, 900, 100, 10);
-normalPerson.chargeBill.call(heroPerson, 5000, 600, 400);
-console.log(heroPerson.salary);
+// normalPerson.chargeBill.call(heroPerson, 10000, 100, 10);
+// normalPerson.chargeBill.call(heroPerson, 5000, 600, 400);
+
+// console.log(heroPerson.salary);
+
+normalPerson.chargeBill.apply(friendlyPerson, [5000, 600, 400]);
+
+console.log(friendlyPerson.salary);

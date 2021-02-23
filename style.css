@@ -1,0 +1,9 @@
+.background{
+    background-image:"bus.png";
+}
+
+.image {
+    background-image: url(bus.png);
+    border-image: auto;
+
+}
